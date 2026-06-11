@@ -131,7 +131,11 @@ def predict_ticket(text, subject, channel, resolution_hours, priority_norm,
         enc = tokenizer(input_text, max_length=MAX_LEN, padding='max_length',
                         truncation=True, return_tensors='pt').to(device)
         with torch.no_grad():
-            logits = model(**enc).logits
+           outputs = model(
+            input_ids=enc['input_ids'],
+            attention_mask=enc['attention_mask']
+        )
+        logits = outputs.logits
         probs      = torch.softmax(logits, dim=1).cpu().numpy()[0]
         pred_label = int(np.argmax(probs))
         confidence = float(probs[pred_label])
