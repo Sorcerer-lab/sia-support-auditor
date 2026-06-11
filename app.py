@@ -10,7 +10,8 @@ Requires in repo root:
   - dossiers.json       (pre-generated dossiers)
   - requirements.txt
 """
-
+import os
+os.environ["STREAMLIT_SERVER_FILE_WATCHER_TYPE"] = "none"
 import streamlit as st
 import pandas as pd
 import numpy as np
@@ -185,7 +186,7 @@ def predict_ticket(text, subject, channel, resolution_hours, priority_norm,
 
 def main():
     all_dossiers = load_dossiers()
-    tokenizer, model, use_model = None, None, False
+    tokenizer, model, use_model = load_model()
 
     # ── Header
     st.title("🔍 SIA — Support Integrity Auditor")
