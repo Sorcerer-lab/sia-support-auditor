@@ -28,7 +28,7 @@ st.set_page_config(
 )
 
 # ── Constants ────────────────────────────────────────────────────────────────
-MODEL_DIR     = os.getenv('MODEL_DIR', './sia_deberta_lora')
+MODEL_DIR = os.getenv('MODEL_DIR', 'JxPar/sia-deberta-mismatch')
 DOSSIERS_PATH = os.getenv('DOSSIERS_PATH', './dossiers.json')
 MAX_LEN       = 256
 
@@ -84,16 +84,17 @@ def keyword_score(text: str) -> dict:
 
 # ── Model loading (cached) ────────────────────────────────────────────────────
 @st.cache_resource(show_spinner="Loading model...")
+@st.cache_resource(show_spinner="Loading model...")
 def load_model():
-    """Load fine-tuned DeBERTa + LoRA from local directory."""
     try:
         from transformers import AutoTokenizer, AutoModelForSequenceClassification
-        from peft import PeftModel
         tokenizer = AutoTokenizer.from_pretrained(MODEL_DIR)
-        base = AutoModelForSequenceClassification.from_pretrained(
-            'microsoft/deberta-v3-small', num_labels=2, ignore_mismatched_sizes=True
+        model = AutoModelForSequenceClassification.from_pretrained(
+            MODEL_DIR,
+            num_labels=2,
+            ignore_mismatched_sizes=True
         )
-        model = PeftModel.from_pretrained(base, MODEL_DIR)
+        model = model.float()
         model.eval()
         return tokenizer, model, True
     except Exception as e:
