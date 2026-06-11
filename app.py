@@ -350,7 +350,9 @@ def main():
         for d in all_dossiers:
             for ev in d.get('feature_evidence', []):
                 if ev.get('signal') == 'keyword':
-                    all_kw.append(ev.get('value', ''))
+                    val = ev.get('value', '')
+                    if val and val.lower() != 'nan' and len(val) > 2:
+                       all_kw.append(val)
         if all_kw:
             kw_series = pd.Series(all_kw).value_counts().head(15)
             st.bar_chart(kw_series)
