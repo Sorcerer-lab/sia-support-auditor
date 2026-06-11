@@ -1,0 +1,1242 @@
+[
+  {
+    "ticket_id": "TKT-116293",
+    "assigned_priority": "Low",
+    "inferred_severity": "High",
+    "mismatch_type": "Hidden Crisis",
+    "severity_delta": 2,
+    "feature_evidence": [
+      {
+        "signal": "resolution_time",
+        "value": "169.5 hours",
+        "interpretation": "Significantly above average \u2014 indicates high operational complexity"
+      },
+      {
+        "signal": "channel",
+        "value": "Web Form",
+        "interpretation": "Standard intake channel"
+      }
+    ],
+    "constraint_analysis": "The ticket contains 0 critical urgency keyword(s) and 0 escalation phrase(s), indicating a true severity of High. The assigned priority (Low) under-represents the urgency by 2 level(s), risking SLA breach and undetected customer impact. Resolution took 169.5 hours, further supporting elevated severity.",
+    "confidence": 0.9852,
+    "_valid": true,
+    "_violations": []
+  },
+  {
+    "ticket_id": "TKT-118377",
+    "assigned_priority": "Critical",
+    "inferred_severity": "Low",
+    "mismatch_type": "False Alarm",
+    "severity_delta": -3,
+    "feature_evidence": [
+      {
+        "signal": "resolution_time",
+        "value": "2.4 hours",
+        "interpretation": "Below average \u2014 relatively quick resolution"
+      },
+      {
+        "signal": "channel",
+        "value": "Web Form",
+        "interpretation": "Standard intake channel"
+      }
+    ],
+    "constraint_analysis": "The ticket was assigned Critical but exhibits characteristics consistent with Low severity based on text signals. With only 0 critical keyword(s) and resolution in 2.4 hours, the ticket appears over-prioritized by 3 level(s), potentially diverting resources from genuinely critical issues.",
+    "confidence": 0.9832,
+    "_valid": true,
+    "_violations": []
+  },
+  {
+    "ticket_id": "TKT-107573",
+    "assigned_priority": "Low",
+    "inferred_severity": "High",
+    "mismatch_type": "Hidden Crisis",
+    "severity_delta": 2,
+    "feature_evidence": [
+      {
+        "signal": "resolution_time",
+        "value": "191.2 hours",
+        "interpretation": "Significantly above average \u2014 indicates high operational complexity"
+      },
+      {
+        "signal": "channel",
+        "value": "Email",
+        "interpretation": "Standard intake channel"
+      }
+    ],
+    "constraint_analysis": "The ticket contains 0 critical urgency keyword(s) and 0 escalation phrase(s), indicating a true severity of High. The assigned priority (Low) under-represents the urgency by 2 level(s), risking SLA breach and undetected customer impact. Resolution took 191.2 hours, further supporting elevated severity.",
+    "confidence": 0.9783,
+    "_valid": true,
+    "_violations": []
+  },
+  {
+    "ticket_id": "TKT-114780",
+    "assigned_priority": "Low",
+    "inferred_severity": "High",
+    "mismatch_type": "Hidden Crisis",
+    "severity_delta": 2,
+    "feature_evidence": [
+      {
+        "signal": "negation",
+        "value": "1 negation pattern(s) detected (e.g. 'cannot', 'not working')",
+        "weight": "medium"
+      },
+      {
+        "signal": "resolution_time",
+        "value": "170.7 hours",
+        "interpretation": "Significantly above average \u2014 indicates high operational complexity"
+      },
+      {
+        "signal": "channel",
+        "value": "Web Form",
+        "interpretation": "Standard intake channel"
+      }
+    ],
+    "constraint_analysis": "The ticket contains 0 critical urgency keyword(s) and 0 escalation phrase(s), indicating a true severity of High. The assigned priority (Low) under-represents the urgency by 2 level(s), risking SLA breach and undetected customer impact. Resolution took 170.7 hours, further supporting elevated severity.",
+    "confidence": 0.9425,
+    "_valid": true,
+    "_violations": []
+  },
+  {
+    "ticket_id": "TKT-105023",
+    "assigned_priority": "Critical",
+    "inferred_severity": "Medium",
+    "mismatch_type": "False Alarm",
+    "severity_delta": -2,
+    "feature_evidence": [
+      {
+        "signal": "keyword",
+        "value": "hacked",
+        "weight": "medium"
+      },
+      {
+        "signal": "resolution_time",
+        "value": "1.1 hours",
+        "interpretation": "Below average \u2014 relatively quick resolution"
+      },
+      {
+        "signal": "channel",
+        "value": "Email",
+        "interpretation": "Standard intake channel"
+      }
+    ],
+    "constraint_analysis": "The ticket was assigned Critical but exhibits characteristics consistent with Medium severity based on text signals. With only 1 critical keyword(s) and resolution in 1.1 hours, the ticket appears over-prioritized by 2 level(s), potentially diverting resources from genuinely critical issues.",
+    "confidence": 0.979,
+    "_valid": true,
+    "_violations": []
+  },
+  {
+    "ticket_id": "TKT-107598",
+    "assigned_priority": "Low",
+    "inferred_severity": "High",
+    "mismatch_type": "Hidden Crisis",
+    "severity_delta": 2,
+    "feature_evidence": [
+      {
+        "signal": "resolution_time",
+        "value": "167.7 hours",
+        "interpretation": "Significantly above average \u2014 indicates high operational complexity"
+      },
+      {
+        "signal": "channel",
+        "value": "Email",
+        "interpretation": "Standard intake channel"
+      }
+    ],
+    "constraint_analysis": "The ticket contains 0 critical urgency keyword(s) and 0 escalation phrase(s), indicating a true severity of High. The assigned priority (Low) under-represents the urgency by 2 level(s), risking SLA breach and undetected customer impact. Resolution took 167.7 hours, further supporting elevated severity.",
+    "confidence": 0.9841,
+    "_valid": true,
+    "_violations": []
+  },
+  {
+    "ticket_id": "TKT-109549",
+    "assigned_priority": "Medium",
+    "inferred_severity": "Medium",
+    "mismatch_type": "False Alarm",
+    "severity_delta": 0,
+    "feature_evidence": [
+      {
+        "signal": "resolution_time",
+        "value": "8.6 hours",
+        "interpretation": "Below average \u2014 relatively quick resolution"
+      },
+      {
+        "signal": "channel",
+        "value": "Web Form",
+        "interpretation": "Standard intake channel"
+      }
+    ],
+    "constraint_analysis": "The ticket was assigned Medium but exhibits characteristics consistent with Medium severity based on text signals. With only 0 critical keyword(s) and resolution in 8.6 hours, the ticket appears over-prioritized by 0 level(s), potentially diverting resources from genuinely critical issues.",
+    "confidence": 0.6625,
+    "_valid": true,
+    "_violations": []
+  },
+  {
+    "ticket_id": "TKT-114252",
+    "assigned_priority": "Critical",
+    "inferred_severity": "Medium",
+    "mismatch_type": "False Alarm",
+    "severity_delta": -2,
+    "feature_evidence": [
+      {
+        "signal": "negation",
+        "value": "1 negation pattern(s) detected (e.g. 'cannot', 'not working')",
+        "weight": "medium"
+      },
+      {
+        "signal": "resolution_time",
+        "value": "1.7 hours",
+        "interpretation": "Below average \u2014 relatively quick resolution"
+      },
+      {
+        "signal": "channel",
+        "value": "Email",
+        "interpretation": "Standard intake channel"
+      }
+    ],
+    "constraint_analysis": "The ticket was assigned Critical but exhibits characteristics consistent with Medium severity based on text signals. With only 0 critical keyword(s) and resolution in 1.7 hours, the ticket appears over-prioritized by 2 level(s), potentially diverting resources from genuinely critical issues.",
+    "confidence": 0.9577,
+    "_valid": true,
+    "_violations": []
+  },
+  {
+    "ticket_id": "TKT-118508",
+    "assigned_priority": "High",
+    "inferred_severity": "Low",
+    "mismatch_type": "False Alarm",
+    "severity_delta": -2,
+    "feature_evidence": [
+      {
+        "signal": "resolution_time",
+        "value": "10.7 hours",
+        "interpretation": "Below average \u2014 relatively quick resolution"
+      },
+      {
+        "signal": "channel",
+        "value": "Email",
+        "interpretation": "Standard intake channel"
+      }
+    ],
+    "constraint_analysis": "The ticket was assigned High but exhibits characteristics consistent with Low severity based on text signals. With only 0 critical keyword(s) and resolution in 10.7 hours, the ticket appears over-prioritized by 2 level(s), potentially diverting resources from genuinely critical issues.",
+    "confidence": 0.7151,
+    "_valid": true,
+    "_violations": []
+  },
+  {
+    "ticket_id": "TKT-113439",
+    "assigned_priority": "Low",
+    "inferred_severity": "High",
+    "mismatch_type": "Hidden Crisis",
+    "severity_delta": 2,
+    "feature_evidence": [
+      {
+        "signal": "resolution_time",
+        "value": "99.2 hours",
+        "interpretation": "Significantly above average \u2014 indicates high operational complexity"
+      },
+      {
+        "signal": "channel",
+        "value": "Chat",
+        "interpretation": "Standard intake channel"
+      }
+    ],
+    "constraint_analysis": "The ticket contains 0 critical urgency keyword(s) and 0 escalation phrase(s), indicating a true severity of High. The assigned priority (Low) under-represents the urgency by 2 level(s), risking SLA breach and undetected customer impact. Resolution took 99.2 hours, further supporting elevated severity.",
+    "confidence": 0.9417,
+    "_valid": true,
+    "_violations": []
+  },
+  {
+    "ticket_id": "TKT-103969",
+    "assigned_priority": "Low",
+    "inferred_severity": "High",
+    "mismatch_type": "Hidden Crisis",
+    "severity_delta": 2,
+    "feature_evidence": [
+      {
+        "signal": "resolution_time",
+        "value": "182.0 hours",
+        "interpretation": "Significantly above average \u2014 indicates high operational complexity"
+      },
+      {
+        "signal": "channel",
+        "value": "Email",
+        "interpretation": "Standard intake channel"
+      }
+    ],
+    "constraint_analysis": "The ticket contains 0 critical urgency keyword(s) and 0 escalation phrase(s), indicating a true severity of High. The assigned priority (Low) under-represents the urgency by 2 level(s), risking SLA breach and undetected customer impact. Resolution took 182.0 hours, further supporting elevated severity.",
+    "confidence": 0.9664,
+    "_valid": true,
+    "_violations": []
+  },
+  {
+    "ticket_id": "TKT-108455",
+    "assigned_priority": "Low",
+    "inferred_severity": "Critical",
+    "mismatch_type": "Hidden Crisis",
+    "severity_delta": 3,
+    "feature_evidence": [
+      {
+        "signal": "escalation_phrase",
+        "value": "1 escalation phrase(s) detected in description",
+        "weight": "high"
+      },
+      {
+        "signal": "resolution_time",
+        "value": "155.1 hours",
+        "interpretation": "Significantly above average \u2014 indicates high operational complexity"
+      },
+      {
+        "signal": "channel",
+        "value": "Web Form",
+        "interpretation": "Standard intake channel"
+      }
+    ],
+    "constraint_analysis": "The ticket contains 0 critical urgency keyword(s) and 1 escalation phrase(s), indicating a true severity of Critical. The assigned priority (Low) under-represents the urgency by 3 level(s), risking SLA breach and undetected customer impact. Resolution took 155.1 hours, further supporting elevated severity.",
+    "confidence": 0.9722,
+    "_valid": true,
+    "_violations": []
+  },
+  {
+    "ticket_id": "TKT-102046",
+    "assigned_priority": "Low",
+    "inferred_severity": "High",
+    "mismatch_type": "Hidden Crisis",
+    "severity_delta": 2,
+    "feature_evidence": [
+      {
+        "signal": "resolution_time",
+        "value": "120.0 hours",
+        "interpretation": "Significantly above average \u2014 indicates high operational complexity"
+      },
+      {
+        "signal": "channel",
+        "value": "Chat",
+        "interpretation": "Standard intake channel"
+      }
+    ],
+    "constraint_analysis": "The ticket contains 0 critical urgency keyword(s) and 0 escalation phrase(s), indicating a true severity of High. The assigned priority (Low) under-represents the urgency by 2 level(s), risking SLA breach and undetected customer impact. Resolution took 120.0 hours, further supporting elevated severity.",
+    "confidence": 0.9713,
+    "_valid": true,
+    "_violations": []
+  },
+  {
+    "ticket_id": "TKT-106974",
+    "assigned_priority": "Critical",
+    "inferred_severity": "Low",
+    "mismatch_type": "False Alarm",
+    "severity_delta": -3,
+    "feature_evidence": [
+      {
+        "signal": "keyword",
+        "value": "nan",
+        "weight": "medium"
+      },
+      {
+        "signal": "resolution_time",
+        "value": "4.6 hours",
+        "interpretation": "Below average \u2014 relatively quick resolution"
+      },
+      {
+        "signal": "channel",
+        "value": "Email",
+        "interpretation": "Standard intake channel"
+      }
+    ],
+    "constraint_analysis": "The ticket was assigned Critical but exhibits characteristics consistent with Low severity based on text signals. With only 0 critical keyword(s) and resolution in 4.6 hours, the ticket appears over-prioritized by 3 level(s), potentially diverting resources from genuinely critical issues.",
+    "confidence": 0.9792,
+    "_valid": true,
+    "_violations": []
+  },
+  {
+    "ticket_id": "TKT-107709",
+    "assigned_priority": "Low",
+    "inferred_severity": "High",
+    "mismatch_type": "Hidden Crisis",
+    "severity_delta": 2,
+    "feature_evidence": [
+      {
+        "signal": "escalation_phrase",
+        "value": "1 escalation phrase(s) detected in description",
+        "weight": "high"
+      },
+      {
+        "signal": "resolution_time",
+        "value": "77.9 hours",
+        "interpretation": "Significantly above average \u2014 indicates high operational complexity"
+      },
+      {
+        "signal": "channel",
+        "value": "Chat",
+        "interpretation": "Standard intake channel"
+      }
+    ],
+    "constraint_analysis": "The ticket contains 0 critical urgency keyword(s) and 1 escalation phrase(s), indicating a true severity of High. The assigned priority (Low) under-represents the urgency by 2 level(s), risking SLA breach and undetected customer impact. Resolution took 77.9 hours, further supporting elevated severity.",
+    "confidence": 0.9316,
+    "_valid": true,
+    "_violations": []
+  },
+  {
+    "ticket_id": "TKT-109673",
+    "assigned_priority": "Medium",
+    "inferred_severity": "Low",
+    "mismatch_type": "False Alarm",
+    "severity_delta": -1,
+    "feature_evidence": [
+      {
+        "signal": "resolution_time",
+        "value": "17.3 hours",
+        "interpretation": "Below average \u2014 relatively quick resolution"
+      },
+      {
+        "signal": "channel",
+        "value": "Web Form",
+        "interpretation": "Standard intake channel"
+      }
+    ],
+    "constraint_analysis": "The ticket was assigned Medium but exhibits characteristics consistent with Low severity based on text signals. With only 0 critical keyword(s) and resolution in 17.3 hours, the ticket appears over-prioritized by 1 level(s), potentially diverting resources from genuinely critical issues.",
+    "confidence": 0.5919,
+    "_valid": true,
+    "_violations": []
+  },
+  {
+    "ticket_id": "TKT-115876",
+    "assigned_priority": "Critical",
+    "inferred_severity": "Medium",
+    "mismatch_type": "False Alarm",
+    "severity_delta": -2,
+    "feature_evidence": [
+      {
+        "signal": "negation",
+        "value": "1 negation pattern(s) detected (e.g. 'cannot', 'not working')",
+        "weight": "medium"
+      },
+      {
+        "signal": "resolution_time",
+        "value": "2.7 hours",
+        "interpretation": "Below average \u2014 relatively quick resolution"
+      },
+      {
+        "signal": "channel",
+        "value": "Web Form",
+        "interpretation": "Standard intake channel"
+      }
+    ],
+    "constraint_analysis": "The ticket was assigned Critical but exhibits characteristics consistent with Medium severity based on text signals. With only 0 critical keyword(s) and resolution in 2.7 hours, the ticket appears over-prioritized by 2 level(s), potentially diverting resources from genuinely critical issues.",
+    "confidence": 0.973,
+    "_valid": true,
+    "_violations": []
+  },
+  {
+    "ticket_id": "TKT-109077",
+    "assigned_priority": "Critical",
+    "inferred_severity": "Low",
+    "mismatch_type": "False Alarm",
+    "severity_delta": -3,
+    "feature_evidence": [
+      {
+        "signal": "resolution_time",
+        "value": "1.6 hours",
+        "interpretation": "Below average \u2014 relatively quick resolution"
+      },
+      {
+        "signal": "channel",
+        "value": "Email",
+        "interpretation": "Standard intake channel"
+      }
+    ],
+    "constraint_analysis": "The ticket was assigned Critical but exhibits characteristics consistent with Low severity based on text signals. With only 0 critical keyword(s) and resolution in 1.6 hours, the ticket appears over-prioritized by 3 level(s), potentially diverting resources from genuinely critical issues.",
+    "confidence": 0.9855,
+    "_valid": true,
+    "_violations": []
+  },
+  {
+    "ticket_id": "TKT-110115",
+    "assigned_priority": "Low",
+    "inferred_severity": "Critical",
+    "mismatch_type": "Hidden Crisis",
+    "severity_delta": 3,
+    "feature_evidence": [
+      {
+        "signal": "escalation_phrase",
+        "value": "1 escalation phrase(s) detected in description",
+        "weight": "high"
+      },
+      {
+        "signal": "resolution_time",
+        "value": "125.9 hours",
+        "interpretation": "Significantly above average \u2014 indicates high operational complexity"
+      },
+      {
+        "signal": "channel",
+        "value": "Email",
+        "interpretation": "Standard intake channel"
+      }
+    ],
+    "constraint_analysis": "The ticket contains 0 critical urgency keyword(s) and 1 escalation phrase(s), indicating a true severity of Critical. The assigned priority (Low) under-represents the urgency by 3 level(s), risking SLA breach and undetected customer impact. Resolution took 125.9 hours, further supporting elevated severity.",
+    "confidence": 0.9609,
+    "_valid": true,
+    "_violations": []
+  },
+  {
+    "ticket_id": "TKT-104396",
+    "assigned_priority": "Low",
+    "inferred_severity": "High",
+    "mismatch_type": "Hidden Crisis",
+    "severity_delta": 2,
+    "feature_evidence": [
+      {
+        "signal": "negation",
+        "value": "1 negation pattern(s) detected (e.g. 'cannot', 'not working')",
+        "weight": "medium"
+      },
+      {
+        "signal": "resolution_time",
+        "value": "76.8 hours",
+        "interpretation": "Significantly above average \u2014 indicates high operational complexity"
+      },
+      {
+        "signal": "channel",
+        "value": "Web Form",
+        "interpretation": "Standard intake channel"
+      }
+    ],
+    "constraint_analysis": "The ticket contains 0 critical urgency keyword(s) and 0 escalation phrase(s), indicating a true severity of High. The assigned priority (Low) under-represents the urgency by 2 level(s), risking SLA breach and undetected customer impact. Resolution took 76.8 hours, further supporting elevated severity.",
+    "confidence": 0.5706,
+    "_valid": true,
+    "_violations": []
+  },
+  {
+    "ticket_id": "TKT-101490",
+    "assigned_priority": "Low",
+    "inferred_severity": "High",
+    "mismatch_type": "Hidden Crisis",
+    "severity_delta": 2,
+    "feature_evidence": [
+      {
+        "signal": "resolution_time",
+        "value": "93.5 hours",
+        "interpretation": "Significantly above average \u2014 indicates high operational complexity"
+      },
+      {
+        "signal": "channel",
+        "value": "Web Form",
+        "interpretation": "Standard intake channel"
+      }
+    ],
+    "constraint_analysis": "The ticket contains 0 critical urgency keyword(s) and 0 escalation phrase(s), indicating a true severity of High. The assigned priority (Low) under-represents the urgency by 2 level(s), risking SLA breach and undetected customer impact. Resolution took 93.5 hours, further supporting elevated severity.",
+    "confidence": 0.8451,
+    "_valid": true,
+    "_violations": []
+  },
+  {
+    "ticket_id": "TKT-113080",
+    "assigned_priority": "Low",
+    "inferred_severity": "Medium",
+    "mismatch_type": "Hidden Crisis",
+    "severity_delta": 1,
+    "feature_evidence": [
+      {
+        "signal": "resolution_time",
+        "value": "169.4 hours",
+        "interpretation": "Significantly above average \u2014 indicates high operational complexity"
+      },
+      {
+        "signal": "channel",
+        "value": "Web Form",
+        "interpretation": "Standard intake channel"
+      }
+    ],
+    "constraint_analysis": "The ticket contains 0 critical urgency keyword(s) and 0 escalation phrase(s), indicating a true severity of Medium. The assigned priority (Low) under-represents the urgency by 1 level(s), risking SLA breach and undetected customer impact. Resolution took 169.4 hours, further supporting elevated severity.",
+    "confidence": 0.8894,
+    "_valid": true,
+    "_violations": []
+  },
+  {
+    "ticket_id": "TKT-107100",
+    "assigned_priority": "High",
+    "inferred_severity": "Low",
+    "mismatch_type": "False Alarm",
+    "severity_delta": -2,
+    "feature_evidence": [
+      {
+        "signal": "resolution_time",
+        "value": "10.9 hours",
+        "interpretation": "Below average \u2014 relatively quick resolution"
+      },
+      {
+        "signal": "channel",
+        "value": "Chat",
+        "interpretation": "Standard intake channel"
+      }
+    ],
+    "constraint_analysis": "The ticket was assigned High but exhibits characteristics consistent with Low severity based on text signals. With only 0 critical keyword(s) and resolution in 10.9 hours, the ticket appears over-prioritized by 2 level(s), potentially diverting resources from genuinely critical issues.",
+    "confidence": 0.9686,
+    "_valid": true,
+    "_violations": []
+  },
+  {
+    "ticket_id": "TKT-102190",
+    "assigned_priority": "High",
+    "inferred_severity": "Medium",
+    "mismatch_type": "False Alarm",
+    "severity_delta": -1,
+    "feature_evidence": [
+      {
+        "signal": "negation",
+        "value": "1 negation pattern(s) detected (e.g. 'cannot', 'not working')",
+        "weight": "medium"
+      },
+      {
+        "signal": "resolution_time",
+        "value": "4.3 hours",
+        "interpretation": "Below average \u2014 relatively quick resolution"
+      },
+      {
+        "signal": "channel",
+        "value": "Web Form",
+        "interpretation": "Standard intake channel"
+      }
+    ],
+    "constraint_analysis": "The ticket was assigned High but exhibits characteristics consistent with Medium severity based on text signals. With only 0 critical keyword(s) and resolution in 4.3 hours, the ticket appears over-prioritized by 1 level(s), potentially diverting resources from genuinely critical issues.",
+    "confidence": 0.9672,
+    "_valid": true,
+    "_violations": []
+  },
+  {
+    "ticket_id": "TKT-114040",
+    "assigned_priority": "High",
+    "inferred_severity": "Low",
+    "mismatch_type": "False Alarm",
+    "severity_delta": -2,
+    "feature_evidence": [
+      {
+        "signal": "resolution_time",
+        "value": "7.9 hours",
+        "interpretation": "Below average \u2014 relatively quick resolution"
+      },
+      {
+        "signal": "channel",
+        "value": "Email",
+        "interpretation": "Standard intake channel"
+      }
+    ],
+    "constraint_analysis": "The ticket was assigned High but exhibits characteristics consistent with Low severity based on text signals. With only 0 critical keyword(s) and resolution in 7.9 hours, the ticket appears over-prioritized by 2 level(s), potentially diverting resources from genuinely critical issues.",
+    "confidence": 0.6965,
+    "_valid": true,
+    "_violations": []
+  },
+  {
+    "ticket_id": "TKT-108502",
+    "assigned_priority": "Low",
+    "inferred_severity": "Critical",
+    "mismatch_type": "Hidden Crisis",
+    "severity_delta": 3,
+    "feature_evidence": [
+      {
+        "signal": "escalation_phrase",
+        "value": "1 escalation phrase(s) detected in description",
+        "weight": "high"
+      },
+      {
+        "signal": "resolution_time",
+        "value": "211.0 hours",
+        "interpretation": "Significantly above average \u2014 indicates high operational complexity"
+      },
+      {
+        "signal": "channel",
+        "value": "Web Form",
+        "interpretation": "Standard intake channel"
+      }
+    ],
+    "constraint_analysis": "The ticket contains 0 critical urgency keyword(s) and 1 escalation phrase(s), indicating a true severity of Critical. The assigned priority (Low) under-represents the urgency by 3 level(s), risking SLA breach and undetected customer impact. Resolution took 211.0 hours, further supporting elevated severity.",
+    "confidence": 0.9768,
+    "_valid": true,
+    "_violations": []
+  },
+  {
+    "ticket_id": "TKT-104628",
+    "assigned_priority": "High",
+    "inferred_severity": "Low",
+    "mismatch_type": "False Alarm",
+    "severity_delta": -2,
+    "feature_evidence": [
+      {
+        "signal": "resolution_time",
+        "value": "17.3 hours",
+        "interpretation": "Below average \u2014 relatively quick resolution"
+      },
+      {
+        "signal": "channel",
+        "value": "Email",
+        "interpretation": "Standard intake channel"
+      }
+    ],
+    "constraint_analysis": "The ticket was assigned High but exhibits characteristics consistent with Low severity based on text signals. With only 0 critical keyword(s) and resolution in 17.3 hours, the ticket appears over-prioritized by 2 level(s), potentially diverting resources from genuinely critical issues.",
+    "confidence": 0.6623,
+    "_valid": true,
+    "_violations": []
+  },
+  {
+    "ticket_id": "TKT-107498",
+    "assigned_priority": "Medium",
+    "inferred_severity": "Low",
+    "mismatch_type": "False Alarm",
+    "severity_delta": -1,
+    "feature_evidence": [
+      {
+        "signal": "resolution_time",
+        "value": "5.3 hours",
+        "interpretation": "Below average \u2014 relatively quick resolution"
+      },
+      {
+        "signal": "channel",
+        "value": "Web Form",
+        "interpretation": "Standard intake channel"
+      }
+    ],
+    "constraint_analysis": "The ticket was assigned Medium but exhibits characteristics consistent with Low severity based on text signals. With only 0 critical keyword(s) and resolution in 5.3 hours, the ticket appears over-prioritized by 1 level(s), potentially diverting resources from genuinely critical issues.",
+    "confidence": 0.6924,
+    "_valid": true,
+    "_violations": []
+  },
+  {
+    "ticket_id": "TKT-104922",
+    "assigned_priority": "High",
+    "inferred_severity": "Medium",
+    "mismatch_type": "False Alarm",
+    "severity_delta": -1,
+    "feature_evidence": [
+      {
+        "signal": "resolution_time",
+        "value": "14.8 hours",
+        "interpretation": "Below average \u2014 relatively quick resolution"
+      },
+      {
+        "signal": "channel",
+        "value": "Chat",
+        "interpretation": "Standard intake channel"
+      }
+    ],
+    "constraint_analysis": "The ticket was assigned High but exhibits characteristics consistent with Medium severity based on text signals. With only 0 critical keyword(s) and resolution in 14.8 hours, the ticket appears over-prioritized by 1 level(s), potentially diverting resources from genuinely critical issues.",
+    "confidence": 0.969,
+    "_valid": true,
+    "_violations": []
+  },
+  {
+    "ticket_id": "TKT-114590",
+    "assigned_priority": "Medium",
+    "inferred_severity": "Low",
+    "mismatch_type": "False Alarm",
+    "severity_delta": -1,
+    "feature_evidence": [
+      {
+        "signal": "resolution_time",
+        "value": "22.4 hours",
+        "interpretation": "Below average \u2014 relatively quick resolution"
+      },
+      {
+        "signal": "channel",
+        "value": "Web Form",
+        "interpretation": "Standard intake channel"
+      }
+    ],
+    "constraint_analysis": "The ticket was assigned Medium but exhibits characteristics consistent with Low severity based on text signals. With only 0 critical keyword(s) and resolution in 22.4 hours, the ticket appears over-prioritized by 1 level(s), potentially diverting resources from genuinely critical issues.",
+    "confidence": 0.6309,
+    "_valid": true,
+    "_violations": []
+  },
+  {
+    "ticket_id": "TKT-100174",
+    "assigned_priority": "Low",
+    "inferred_severity": "Critical",
+    "mismatch_type": "Hidden Crisis",
+    "severity_delta": 3,
+    "feature_evidence": [
+      {
+        "signal": "escalation_phrase",
+        "value": "1 escalation phrase(s) detected in description",
+        "weight": "high"
+      },
+      {
+        "signal": "negation",
+        "value": "1 negation pattern(s) detected (e.g. 'cannot', 'not working')",
+        "weight": "medium"
+      },
+      {
+        "signal": "resolution_time",
+        "value": "133.3 hours",
+        "interpretation": "Significantly above average \u2014 indicates high operational complexity"
+      },
+      {
+        "signal": "channel",
+        "value": "Email",
+        "interpretation": "Standard intake channel"
+      }
+    ],
+    "constraint_analysis": "The ticket contains 0 critical urgency keyword(s) and 1 escalation phrase(s), indicating a true severity of Critical. The assigned priority (Low) under-represents the urgency by 3 level(s), risking SLA breach and undetected customer impact. Resolution took 133.3 hours, further supporting elevated severity.",
+    "confidence": 0.9641,
+    "_valid": true,
+    "_violations": []
+  },
+  {
+    "ticket_id": "TKT-116383",
+    "assigned_priority": "High",
+    "inferred_severity": "Low",
+    "mismatch_type": "False Alarm",
+    "severity_delta": -2,
+    "feature_evidence": [
+      {
+        "signal": "resolution_time",
+        "value": "13.3 hours",
+        "interpretation": "Below average \u2014 relatively quick resolution"
+      },
+      {
+        "signal": "channel",
+        "value": "Chat",
+        "interpretation": "Standard intake channel"
+      }
+    ],
+    "constraint_analysis": "The ticket was assigned High but exhibits characteristics consistent with Low severity based on text signals. With only 0 critical keyword(s) and resolution in 13.3 hours, the ticket appears over-prioritized by 2 level(s), potentially diverting resources from genuinely critical issues.",
+    "confidence": 0.6532,
+    "_valid": true,
+    "_violations": []
+  },
+  {
+    "ticket_id": "TKT-103708",
+    "assigned_priority": "Critical",
+    "inferred_severity": "Medium",
+    "mismatch_type": "False Alarm",
+    "severity_delta": -2,
+    "feature_evidence": [
+      {
+        "signal": "resolution_time",
+        "value": "3.5 hours",
+        "interpretation": "Below average \u2014 relatively quick resolution"
+      },
+      {
+        "signal": "channel",
+        "value": "Web Form",
+        "interpretation": "Standard intake channel"
+      }
+    ],
+    "constraint_analysis": "The ticket was assigned Critical but exhibits characteristics consistent with Medium severity based on text signals. With only 0 critical keyword(s) and resolution in 3.5 hours, the ticket appears over-prioritized by 2 level(s), potentially diverting resources from genuinely critical issues.",
+    "confidence": 0.9681,
+    "_valid": true,
+    "_violations": []
+  },
+  {
+    "ticket_id": "TKT-113367",
+    "assigned_priority": "Low",
+    "inferred_severity": "Medium",
+    "mismatch_type": "Hidden Crisis",
+    "severity_delta": 1,
+    "feature_evidence": [
+      {
+        "signal": "resolution_time",
+        "value": "11.9 hours",
+        "interpretation": "Below average \u2014 relatively quick resolution"
+      },
+      {
+        "signal": "channel",
+        "value": "Email",
+        "interpretation": "Standard intake channel"
+      }
+    ],
+    "constraint_analysis": "The ticket contains 0 critical urgency keyword(s) and 0 escalation phrase(s), indicating a true severity of Medium. The assigned priority (Low) under-represents the urgency by 1 level(s), risking SLA breach and undetected customer impact. Resolution took 11.9 hours, further supporting elevated severity.",
+    "confidence": 0.5838,
+    "_valid": true,
+    "_violations": []
+  },
+  {
+    "ticket_id": "TKT-106589",
+    "assigned_priority": "Critical",
+    "inferred_severity": "Medium",
+    "mismatch_type": "False Alarm",
+    "severity_delta": -2,
+    "feature_evidence": [
+      {
+        "signal": "keyword",
+        "value": "immediately",
+        "weight": "medium"
+      },
+      {
+        "signal": "resolution_time",
+        "value": "3.3 hours",
+        "interpretation": "Below average \u2014 relatively quick resolution"
+      },
+      {
+        "signal": "channel",
+        "value": "Web Form",
+        "interpretation": "Standard intake channel"
+      }
+    ],
+    "constraint_analysis": "The ticket was assigned Critical but exhibits characteristics consistent with Medium severity based on text signals. With only 1 critical keyword(s) and resolution in 3.3 hours, the ticket appears over-prioritized by 2 level(s), potentially diverting resources from genuinely critical issues.",
+    "confidence": 0.9781,
+    "_valid": true,
+    "_violations": []
+  },
+  {
+    "ticket_id": "TKT-119228",
+    "assigned_priority": "High",
+    "inferred_severity": "Low",
+    "mismatch_type": "False Alarm",
+    "severity_delta": -2,
+    "feature_evidence": [
+      {
+        "signal": "resolution_time",
+        "value": "15.4 hours",
+        "interpretation": "Below average \u2014 relatively quick resolution"
+      },
+      {
+        "signal": "channel",
+        "value": "Email",
+        "interpretation": "Standard intake channel"
+      }
+    ],
+    "constraint_analysis": "The ticket was assigned High but exhibits characteristics consistent with Low severity based on text signals. With only 0 critical keyword(s) and resolution in 15.4 hours, the ticket appears over-prioritized by 2 level(s), potentially diverting resources from genuinely critical issues.",
+    "confidence": 0.6697,
+    "_valid": true,
+    "_violations": []
+  },
+  {
+    "ticket_id": "TKT-119428",
+    "assigned_priority": "Medium",
+    "inferred_severity": "Low",
+    "mismatch_type": "False Alarm",
+    "severity_delta": -1,
+    "feature_evidence": [
+      {
+        "signal": "resolution_time",
+        "value": "9.5 hours",
+        "interpretation": "Below average \u2014 relatively quick resolution"
+      },
+      {
+        "signal": "channel",
+        "value": "Chat",
+        "interpretation": "Standard intake channel"
+      }
+    ],
+    "constraint_analysis": "The ticket was assigned Medium but exhibits characteristics consistent with Low severity based on text signals. With only 0 critical keyword(s) and resolution in 9.5 hours, the ticket appears over-prioritized by 1 level(s), potentially diverting resources from genuinely critical issues.",
+    "confidence": 0.696,
+    "_valid": true,
+    "_violations": []
+  },
+  {
+    "ticket_id": "TKT-114775",
+    "assigned_priority": "Critical",
+    "inferred_severity": "Medium",
+    "mismatch_type": "False Alarm",
+    "severity_delta": -2,
+    "feature_evidence": [
+      {
+        "signal": "resolution_time",
+        "value": "2.5 hours",
+        "interpretation": "Below average \u2014 relatively quick resolution"
+      },
+      {
+        "signal": "channel",
+        "value": "Chat",
+        "interpretation": "Standard intake channel"
+      }
+    ],
+    "constraint_analysis": "The ticket was assigned Critical but exhibits characteristics consistent with Medium severity based on text signals. With only 0 critical keyword(s) and resolution in 2.5 hours, the ticket appears over-prioritized by 2 level(s), potentially diverting resources from genuinely critical issues.",
+    "confidence": 0.9734,
+    "_valid": true,
+    "_violations": []
+  },
+  {
+    "ticket_id": "TKT-113882",
+    "assigned_priority": "Low",
+    "inferred_severity": "High",
+    "mismatch_type": "Hidden Crisis",
+    "severity_delta": 2,
+    "feature_evidence": [
+      {
+        "signal": "resolution_time",
+        "value": "156.7 hours",
+        "interpretation": "Significantly above average \u2014 indicates high operational complexity"
+      },
+      {
+        "signal": "channel",
+        "value": "Chat",
+        "interpretation": "Standard intake channel"
+      }
+    ],
+    "constraint_analysis": "The ticket contains 0 critical urgency keyword(s) and 0 escalation phrase(s), indicating a true severity of High. The assigned priority (Low) under-represents the urgency by 2 level(s), risking SLA breach and undetected customer impact. Resolution took 156.7 hours, further supporting elevated severity.",
+    "confidence": 0.9652,
+    "_valid": true,
+    "_violations": []
+  },
+  {
+    "ticket_id": "TKT-102332",
+    "assigned_priority": "High",
+    "inferred_severity": "Low",
+    "mismatch_type": "False Alarm",
+    "severity_delta": -2,
+    "feature_evidence": [
+      {
+        "signal": "resolution_time",
+        "value": "4.7 hours",
+        "interpretation": "Below average \u2014 relatively quick resolution"
+      },
+      {
+        "signal": "channel",
+        "value": "Chat",
+        "interpretation": "Standard intake channel"
+      }
+    ],
+    "constraint_analysis": "The ticket was assigned High but exhibits characteristics consistent with Low severity based on text signals. With only 0 critical keyword(s) and resolution in 4.7 hours, the ticket appears over-prioritized by 2 level(s), potentially diverting resources from genuinely critical issues.",
+    "confidence": 0.9819,
+    "_valid": true,
+    "_violations": []
+  },
+  {
+    "ticket_id": "TKT-109550",
+    "assigned_priority": "Critical",
+    "inferred_severity": "Medium",
+    "mismatch_type": "False Alarm",
+    "severity_delta": -2,
+    "feature_evidence": [
+      {
+        "signal": "negation",
+        "value": "1 negation pattern(s) detected (e.g. 'cannot', 'not working')",
+        "weight": "medium"
+      },
+      {
+        "signal": "resolution_time",
+        "value": "3.4 hours",
+        "interpretation": "Below average \u2014 relatively quick resolution"
+      },
+      {
+        "signal": "channel",
+        "value": "Email",
+        "interpretation": "Standard intake channel"
+      }
+    ],
+    "constraint_analysis": "The ticket was assigned Critical but exhibits characteristics consistent with Medium severity based on text signals. With only 0 critical keyword(s) and resolution in 3.4 hours, the ticket appears over-prioritized by 2 level(s), potentially diverting resources from genuinely critical issues.",
+    "confidence": 0.7722,
+    "_valid": true,
+    "_violations": []
+  },
+  {
+    "ticket_id": "TKT-100081",
+    "assigned_priority": "Critical",
+    "inferred_severity": "Low",
+    "mismatch_type": "False Alarm",
+    "severity_delta": -3,
+    "feature_evidence": [
+      {
+        "signal": "resolution_time",
+        "value": "3.4 hours",
+        "interpretation": "Below average \u2014 relatively quick resolution"
+      },
+      {
+        "signal": "channel",
+        "value": "Chat",
+        "interpretation": "Standard intake channel"
+      }
+    ],
+    "constraint_analysis": "The ticket was assigned Critical but exhibits characteristics consistent with Low severity based on text signals. With only 0 critical keyword(s) and resolution in 3.4 hours, the ticket appears over-prioritized by 3 level(s), potentially diverting resources from genuinely critical issues.",
+    "confidence": 0.9846,
+    "_valid": true,
+    "_violations": []
+  },
+  {
+    "ticket_id": "TKT-117479",
+    "assigned_priority": "Low",
+    "inferred_severity": "High",
+    "mismatch_type": "Hidden Crisis",
+    "severity_delta": 2,
+    "feature_evidence": [
+      {
+        "signal": "resolution_time",
+        "value": "90.4 hours",
+        "interpretation": "Significantly above average \u2014 indicates high operational complexity"
+      },
+      {
+        "signal": "channel",
+        "value": "Email",
+        "interpretation": "Standard intake channel"
+      }
+    ],
+    "constraint_analysis": "The ticket contains 0 critical urgency keyword(s) and 0 escalation phrase(s), indicating a true severity of High. The assigned priority (Low) under-represents the urgency by 2 level(s), risking SLA breach and undetected customer impact. Resolution took 90.4 hours, further supporting elevated severity.",
+    "confidence": 0.8936,
+    "_valid": true,
+    "_violations": []
+  },
+  {
+    "ticket_id": "TKT-116299",
+    "assigned_priority": "Low",
+    "inferred_severity": "Critical",
+    "mismatch_type": "Hidden Crisis",
+    "severity_delta": 3,
+    "feature_evidence": [
+      {
+        "signal": "escalation_phrase",
+        "value": "1 escalation phrase(s) detected in description",
+        "weight": "high"
+      },
+      {
+        "signal": "resolution_time",
+        "value": "153.9 hours",
+        "interpretation": "Significantly above average \u2014 indicates high operational complexity"
+      },
+      {
+        "signal": "channel",
+        "value": "Chat",
+        "interpretation": "Standard intake channel"
+      }
+    ],
+    "constraint_analysis": "The ticket contains 0 critical urgency keyword(s) and 1 escalation phrase(s), indicating a true severity of Critical. The assigned priority (Low) under-represents the urgency by 3 level(s), risking SLA breach and undetected customer impact. Resolution took 153.9 hours, further supporting elevated severity.",
+    "confidence": 0.9715,
+    "_valid": true,
+    "_violations": []
+  },
+  {
+    "ticket_id": "TKT-108702",
+    "assigned_priority": "Critical",
+    "inferred_severity": "Medium",
+    "mismatch_type": "False Alarm",
+    "severity_delta": -2,
+    "feature_evidence": [
+      {
+        "signal": "resolution_time",
+        "value": "1.3 hours",
+        "interpretation": "Below average \u2014 relatively quick resolution"
+      },
+      {
+        "signal": "channel",
+        "value": "Chat",
+        "interpretation": "Standard intake channel"
+      }
+    ],
+    "constraint_analysis": "The ticket was assigned Critical but exhibits characteristics consistent with Medium severity based on text signals. With only 0 critical keyword(s) and resolution in 1.3 hours, the ticket appears over-prioritized by 2 level(s), potentially diverting resources from genuinely critical issues.",
+    "confidence": 0.9372,
+    "_valid": true,
+    "_violations": []
+  },
+  {
+    "ticket_id": "TKT-110742",
+    "assigned_priority": "High",
+    "inferred_severity": "Low",
+    "mismatch_type": "False Alarm",
+    "severity_delta": -2,
+    "feature_evidence": [
+      {
+        "signal": "resolution_time",
+        "value": "8.0 hours",
+        "interpretation": "Below average \u2014 relatively quick resolution"
+      },
+      {
+        "signal": "channel",
+        "value": "Email",
+        "interpretation": "Standard intake channel"
+      }
+    ],
+    "constraint_analysis": "The ticket was assigned High but exhibits characteristics consistent with Low severity based on text signals. With only 0 critical keyword(s) and resolution in 8.0 hours, the ticket appears over-prioritized by 2 level(s), potentially diverting resources from genuinely critical issues.",
+    "confidence": 0.6799,
+    "_valid": true,
+    "_violations": []
+  },
+  {
+    "ticket_id": "TKT-116948",
+    "assigned_priority": "High",
+    "inferred_severity": "Medium",
+    "mismatch_type": "False Alarm",
+    "severity_delta": -1,
+    "feature_evidence": [
+      {
+        "signal": "keyword",
+        "value": "immediately",
+        "weight": "medium"
+      },
+      {
+        "signal": "resolution_time",
+        "value": "9.4 hours",
+        "interpretation": "Below average \u2014 relatively quick resolution"
+      },
+      {
+        "signal": "channel",
+        "value": "Chat",
+        "interpretation": "Standard intake channel"
+      }
+    ],
+    "constraint_analysis": "The ticket was assigned High but exhibits characteristics consistent with Medium severity based on text signals. With only 1 critical keyword(s) and resolution in 9.4 hours, the ticket appears over-prioritized by 1 level(s), potentially diverting resources from genuinely critical issues.",
+    "confidence": 0.9358,
+    "_valid": true,
+    "_violations": []
+  },
+  {
+    "ticket_id": "TKT-107004",
+    "assigned_priority": "Low",
+    "inferred_severity": "High",
+    "mismatch_type": "Hidden Crisis",
+    "severity_delta": 2,
+    "feature_evidence": [
+      {
+        "signal": "resolution_time",
+        "value": "154.0 hours",
+        "interpretation": "Significantly above average \u2014 indicates high operational complexity"
+      },
+      {
+        "signal": "channel",
+        "value": "Email",
+        "interpretation": "Standard intake channel"
+      }
+    ],
+    "constraint_analysis": "The ticket contains 0 critical urgency keyword(s) and 0 escalation phrase(s), indicating a true severity of High. The assigned priority (Low) under-represents the urgency by 2 level(s), risking SLA breach and undetected customer impact. Resolution took 154.0 hours, further supporting elevated severity.",
+    "confidence": 0.9772,
+    "_valid": true,
+    "_violations": []
+  },
+  {
+    "ticket_id": "TKT-106345",
+    "assigned_priority": "High",
+    "inferred_severity": "Low",
+    "mismatch_type": "False Alarm",
+    "severity_delta": -2,
+    "feature_evidence": [
+      {
+        "signal": "resolution_time",
+        "value": "12.4 hours",
+        "interpretation": "Below average \u2014 relatively quick resolution"
+      },
+      {
+        "signal": "channel",
+        "value": "Chat",
+        "interpretation": "Standard intake channel"
+      }
+    ],
+    "constraint_analysis": "The ticket was assigned High but exhibits characteristics consistent with Low severity based on text signals. With only 0 critical keyword(s) and resolution in 12.4 hours, the ticket appears over-prioritized by 2 level(s), potentially diverting resources from genuinely critical issues.",
+    "confidence": 0.7124,
+    "_valid": true,
+    "_violations": []
+  },
+  {
+    "ticket_id": "TKT-103552",
+    "assigned_priority": "High",
+    "inferred_severity": "Medium",
+    "mismatch_type": "False Alarm",
+    "severity_delta": -1,
+    "feature_evidence": [
+      {
+        "signal": "negation",
+        "value": "1 negation pattern(s) detected (e.g. 'cannot', 'not working')",
+        "weight": "medium"
+      },
+      {
+        "signal": "resolution_time",
+        "value": "13.7 hours",
+        "interpretation": "Below average \u2014 relatively quick resolution"
+      },
+      {
+        "signal": "channel",
+        "value": "Web Form",
+        "interpretation": "Standard intake channel"
+      }
+    ],
+    "constraint_analysis": "The ticket was assigned High but exhibits characteristics consistent with Medium severity based on text signals. With only 0 critical keyword(s) and resolution in 13.7 hours, the ticket appears over-prioritized by 1 level(s), potentially diverting resources from genuinely critical issues.",
+    "confidence": 0.7011,
+    "_valid": true,
+    "_violations": []
+  }
+]
