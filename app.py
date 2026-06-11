@@ -83,7 +83,7 @@ def keyword_score(text: str) -> dict:
 
 
 # ── Model loading (cached) ────────────────────────────────────────────────────
-@st.cache_resource(show_spinner="Loading model...")
+
 @st.cache_resource(show_spinner="Loading model...")
 def load_model():
     try:
@@ -184,8 +184,8 @@ def predict_ticket(text, subject, channel, resolution_hours, priority_norm,
 # ══════════════════════════════════════════════════════════════════════════════
 
 def main():
-    tokenizer, model, use_model = load_model()
     all_dossiers = load_dossiers()
+    tokenizer, model, use_model = None, None, False
 
     # ── Header
     st.title("🔍 SIA — Support Integrity Auditor")
@@ -217,7 +217,8 @@ def main():
             if not description.strip():
                 st.error("Please enter a ticket description.")
             else:
-                with st.spinner("Analyzing..."):
+                with st.spinner("Analyzing... (loading model on first run, may take 30s)"):
+                    tokenizer, model, use_model = load_model()
                     pred, mtype, conf, dossier = predict_ticket(
                         description, subject, channel, res_time,
                         priority, ticket_type, ticket_id,
