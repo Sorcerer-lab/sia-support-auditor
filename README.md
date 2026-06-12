@@ -72,6 +72,7 @@ Raw Tickets
 
 - **Base**: `microsoft/deberta-v3-small`
 - **Adapter**: LoRA (r=8, α=16, target: `query_proj` + `key_proj`)
+- **Deployed model**: LoRA weights merged into base model and hosted at [huggingface.co/JxPar/sia-deberta-half](https://huggingface.co/JxPar/sia-deberta-half) (float16, ~284MB) for Streamlit Cloud deployment
 - **Trainable params**: ~1.3% of total
 - **Input features**: Ticket text + `[CHANNEL: x] [RESOLUTION_TIME: x hrs] [TYPE: x]` prefix
 - **Imbalance handling**: Weighted CrossEntropyLoss
@@ -103,7 +104,7 @@ Raw Tickets
 | System | Score | Bonus |
 |--------|-------|-------|
 | Keyword baseline | 4/10 | — |
-| **SIA model** | **8/10** | **✅ +10% bonus earned** |
+| **SIA model** | **8/10** | **✅ +10% bonus ** |
 
 The SIA model correctly handled 8/10 adversarially crafted tickets, including:
 - Tickets with urgency keywords in subject but benign body text (False Alarm detection)
@@ -147,6 +148,7 @@ For every flagged ticket:
 
 ```
 sia/
+├── notebook.ipynb                       # Full reproducible pipeline (pseudo-label → training → inference)
 ├── SIA_Phase1_2_PseudoLabeling.ipynb   # EDA + pseudo-label generation
 ├── SIA_Phase3_Training.ipynb            # DeBERTa fine-tuning
 ├── SIA_Phase4_Dossier.ipynb             # Dossier generation
@@ -154,10 +156,10 @@ sia/
 ├── train_pipeline.py                    # Standalone training script
 ├── predict.py                           # CLI inference script
 ├── adversarial_test.py                  # Adversarial robustness evaluation
+├── dossiers.json                        # Pre-generated evidence dossiers
 ├── requirements.txt
 └── README.md
 ```
-
 ---
 
 ## Running Locally
@@ -182,6 +184,6 @@ streamlit run app.py
 
 ## Links
 
-- 🌐 **Demo App**: [your-app-url.streamlit.app]
-- 📁 **Models folder**: [your-drive-link]
-- 🎥 **Demo video**: [your-video-link]
+- 🌐 **Demo App**: [demo app](https://sia-support-auditor.streamlit.app/)
+- 📁 **Models folder**: [huggingface.co/JxPar/sia-deberta-half](https://huggingface.co/JxPar/sia-deberta-half)
+- 🎥 **Demo video**: [video-link](https://drive.google.com/file/d/1LH8nmz7KXqmhTN3UVOLhN0tm-UWQZhy1/view?usp=sharing)
