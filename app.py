@@ -77,8 +77,9 @@ def load_model():
         config = DebertaV2Config.from_pretrained(MODEL_DIR)
         if isinstance(config.pos_att_type, list):
             config.pos_att_type = "|".join(config.pos_att_type)
-        config.id2label = {0: "Consistent", 1: "Mismatch"}
-        config.label2id = {"Consistent": 0, "Mismatch": 1}
+        
+        config.__dict__['id2label'] = {0: "Consistent", 1: "Mismatch"}
+        config.__dict__['label2id'] = {"Consistent": 0, "Mismatch": 1}
         config.num_labels = 2
 
         tokenizer = AutoTokenizer.from_pretrained(MODEL_DIR)
