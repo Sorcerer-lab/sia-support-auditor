@@ -75,6 +75,8 @@ def load_model():
         
         # Load config and fix pos_att_type
         config = DebertaV2Config.from_pretrained(MODEL_DIR)
+        st.write({k: f"{type(v).__name__} = {v}" 
+          for k, v in config.__dict__.items()})
         if isinstance(config.pos_att_type, list):
             config.pos_att_type = "|".join(config.pos_att_type)
         
