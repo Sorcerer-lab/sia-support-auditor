@@ -72,36 +72,43 @@ def keyword_score(text: str) -> dict:
 def load_model():
     try:
         from transformers import AutoTokenizer, AutoModelForSequenceClassification, DebertaV2Config
+        import json
 
-        config = DebertaV2Config.from_pretrained(MODEL_DIR)
+        # Step 1: Read raw config.json manually
+        from huggingface_hub import hf_hub_download
+        config_path = hf_hub_download(repo_id=MODEL_DIR, filename="config.json")
+        
+        with open(config_path) as f:
+            raw = json.load(f)
 
-        # Fix 1: pos_att_type must be a string, not a list
-        if isinstance(config.pos_att_type, list):
-            config.pos_att_type = "|".join(config.pos_att_type)
+        # Step 2: Fix all problematic fields before building config
+        raw['pos_att_type'] = "|".join(raw['pos_att_type']) if isinstance(raw['pos_att_type'], list) else raw['pos_att_type']
+        raw['id2label']     = {0: "Consistent", 1: "Mismatch"}
+        raw['label2id']     = {"Consistent": 0, "Mismatch": 1}
+        raw['num_labels']   = 2
+        raw.pop('dtype', None)          # remove problematic dtype field
+        raw.pop('architectures', None)  # remove architectures list
 
-        # Fix 2: dtype as string causes internal dict lookup to fail
-        if hasattr(config, 'dtype'):
-            del config.__dict__['dtype']
-
-        # Fix 3: ensure labels are dicts
-        config.__dict__['id2label'] = {0: "Consistent", 1: "Mismatch"}
-        config.__dict__['label2id'] = {"Consistent": 0, "Mismatch": 1}
-        config.num_labels = 2
+        # Step 3: Build config from cleaned dict
+        config = DebertaV2Config(**{k: v for k, v in raw.items() 
+                                    if k not in DebertaV2Config().to_diff_dict() or k in raw})
 
         tokenizer = AutoTokenizer.from_pretrained(MODEL_DIR)
         model = AutoModelForSequenceClassification.from_pretrained(
             MODEL_DIR,
             config=config,
             ignore_mismatched_sizes=True,
-            torch_dtype=torch.float32,   # Fix 4: force float32 explicitly
+            torch_dtype=torch.float32,
         )
         model = model.float()
         model.eval()
         return tokenizer, model, True
-    except Exception as e:
-        st.error(f"Model load error: {e}")
-        return None, None, False
 
+    except Exception as e:
+        import traceback
+        st.error(f"Model load error: {e}")
+        st.code(traceback.format_exc())   # 👈 this will show the FULL stack trace
+        return None, None, False
 @st.cache_data
 def load_dossiers():
     if Path(DOSSIERS_PATH).exists():
