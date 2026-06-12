@@ -76,7 +76,9 @@ def load_model():
         model = AutoModelForSequenceClassification.from_pretrained(
             MODEL_DIR,
             num_labels=2,
-            ignore_mismatched_sizes=True
+            ignore_mismatched_sizes=True,
+            id2label={0: "Consistent", 1: "Mismatch"},
+            label2id={"Consistent": 0, "Mismatch": 1},
         )
         model = model.float()
         model.eval()
