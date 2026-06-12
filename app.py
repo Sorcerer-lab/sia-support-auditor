@@ -71,14 +71,21 @@ def keyword_score(text: str) -> dict:
 @st.cache_resource(show_spinner="Loading model... (first run may take 30s)")
 def load_model():
     try:
-        from transformers import AutoTokenizer, AutoModelForSequenceClassification
+        from transformers import AutoTokenizer, AutoModelForSequenceClassification, DebertaV2Config
+        
+        # Load config and fix pos_att_type
+        config = DebertaV2Config.from_pretrained(MODEL_DIR)
+        if isinstance(config.pos_att_type, list):
+            config.pos_att_type = "|".join(config.pos_att_type)
+        config.id2label = {0: "Consistent", 1: "Mismatch"}
+        config.label2id = {"Consistent": 0, "Mismatch": 1}
+        config.num_labels = 2
+
         tokenizer = AutoTokenizer.from_pretrained(MODEL_DIR)
         model = AutoModelForSequenceClassification.from_pretrained(
             MODEL_DIR,
-            num_labels=2,
+            config=config,
             ignore_mismatched_sizes=True,
-            id2label={0: "Consistent", 1: "Mismatch"},
-            label2id={"Consistent": 0, "Mismatch": 1},
         )
         model = model.float()
         model.eval()
