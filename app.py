@@ -81,6 +81,9 @@ def load_model():
         config.__dict__['id2label'] = {0: "Consistent", 1: "Mismatch"}
         config.__dict__['label2id'] = {"Consistent": 0, "Mismatch": 1}
         config.num_labels = 2
+        st.write("Config list fields:", {k: type(v).__name__ for k, v in config.__dict__.items() 
+                                  if isinstance(v, list)})
+
 
         tokenizer = AutoTokenizer.from_pretrained(MODEL_DIR)
         model = AutoModelForSequenceClassification.from_pretrained(
