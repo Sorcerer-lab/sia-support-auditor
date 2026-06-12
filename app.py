@@ -18,7 +18,7 @@ st.set_page_config(
     layout="wide",
 )
 
-MODEL_DIR     = os.getenv('MODEL_DIR', 'JxPar/sia-deberta-mismatch')
+MODEL_DIR     = os.getenv('MODEL_DIR', 'JxPar/sia-deberta-half')
 DOSSIERS_PATH = os.getenv('DOSSIERS_PATH', './dossiers.json')
 MAX_LEN       = 256
 
