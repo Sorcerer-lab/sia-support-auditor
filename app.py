@@ -82,6 +82,7 @@ def load_model():
         model.eval()
         return tokenizer, model, True
     except Exception as e:
+        st.error(f"Model load error: {e}")
         return None, None, False
 
 
