@@ -72,26 +72,28 @@ def keyword_score(text: str) -> dict:
 def load_model():
     try:
         from transformers import AutoTokenizer, AutoModelForSequenceClassification, DebertaV2Config
-        
-        # Load config and fix pos_att_type
+
         config = DebertaV2Config.from_pretrained(MODEL_DIR)
-        st.write({k: f"{type(v).__name__} = {v}" 
-          for k, v in config.__dict__.items()})
+
+        # Fix 1: pos_att_type must be a string, not a list
         if isinstance(config.pos_att_type, list):
             config.pos_att_type = "|".join(config.pos_att_type)
-        
+
+        # Fix 2: dtype as string causes internal dict lookup to fail
+        if hasattr(config, 'dtype'):
+            del config.__dict__['dtype']
+
+        # Fix 3: ensure labels are dicts
         config.__dict__['id2label'] = {0: "Consistent", 1: "Mismatch"}
         config.__dict__['label2id'] = {"Consistent": 0, "Mismatch": 1}
         config.num_labels = 2
-        st.write("Config list fields:", {k: type(v).__name__ for k, v in config.__dict__.items() 
-                                  if isinstance(v, list)})
-
 
         tokenizer = AutoTokenizer.from_pretrained(MODEL_DIR)
         model = AutoModelForSequenceClassification.from_pretrained(
             MODEL_DIR,
             config=config,
             ignore_mismatched_sizes=True,
+            torch_dtype=torch.float32,   # Fix 4: force float32 explicitly
         )
         model = model.float()
         model.eval()
@@ -99,7 +101,6 @@ def load_model():
     except Exception as e:
         st.error(f"Model load error: {e}")
         return None, None, False
-
 
 @st.cache_data
 def load_dossiers():
