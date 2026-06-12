@@ -108,6 +108,7 @@ def predict_ticket(text, subject, channel, resolution_hours, priority_norm,
         mtype = 'Hidden Crisis' if delta > 0 else 'False Alarm'
 
     if use_model and tokenizer and model:
+        model=model.float()
         device = next(model.parameters()).device
         enc = tokenizer(input_text, max_length=MAX_LEN, padding='max_length',
                         truncation=True, return_tensors='pt').to(device)
